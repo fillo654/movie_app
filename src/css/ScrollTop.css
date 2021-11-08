@@ -1,0 +1,7 @@
+.scrollTop {
+    position: fixed;
+    bottom: 60px;
+    left: 90%;
+    animation: fadeIn 700ms ease-in-out 0.2s both;
+}
+

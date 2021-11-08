@@ -1,0 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+.ScrollToTopIcon {
+    box-shadow: 2px 2px 5px black;
+    color: rgba(25, 118, 210, 0.3);
+}
