@@ -8,6 +8,10 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import MovieIcon from '@mui/icons-material/Movie';
+// button
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -51,7 +55,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
+
 export default function Header() {
+
+
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -73,6 +82,7 @@ export default function Header() {
           >
             Movie App
           </Typography>
+
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -82,6 +92,11 @@ export default function Header() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
+          <Stack spacing={2} direction="row">
+            <Button style={{ color: '#fff'}} variant="outlined">Reset</Button>
+          </Stack>
+
+
         </Toolbar>
       </AppBar>
     </Box>

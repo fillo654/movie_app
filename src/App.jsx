@@ -12,6 +12,7 @@ import ScrollToTop from "../src/components/ScrollToTop";
 
 
 function App() {
+  
   // const [movie, setMovie] = useState(movie)
 
   // useEffect(() => {
@@ -19,7 +20,7 @@ function App() {
   //     .then(res => res.json())
   //     .then(movie => setMovie(movie))
   // });
-
+ 
   return (
 
     <BrowserRouter>

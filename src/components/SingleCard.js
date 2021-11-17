@@ -11,7 +11,7 @@ const SingleCard = ({ id, title, poster, date, media_type, vote_average }) => {
 
     return (
         <div className="card">
-            <Badge badgeContent={vote_average} color={vote_average > 6 ? "primary" : "secondary"} />
+            <Badge sx={{right: "-190px"}} badgeContent={vote_average} color={vote_average > 6 ? "primary" : "secondary"} />
             <img className="poster" src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
             <div className="cardContent">
                 <span className="title">{title}</span>
