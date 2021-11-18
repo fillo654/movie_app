@@ -11,7 +11,6 @@ const Movies = () => {
     const [page, setPage] = useState(1);
     const [numOfPages, setNumOfPages] = useState();
     // const [selectedGneres, setSelectedGeneres ] = useState([]);
-    
 
     const fetchMovies = async () => {
 
@@ -36,7 +35,6 @@ const Movies = () => {
             </div>
             <div container className="trending">
             <selectedGneres />
-            {/* se c'è qualocsa inside content e content map, (console.log(c)) */}
                 {content.map((c) =>
                     <SingleCard
                         key={c.id}

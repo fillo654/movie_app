@@ -4,6 +4,7 @@ import BottomNav from './components/BottomNav.js';
 import Movies from './pages/Movies';
 import Series from './pages/Series';
 import Trending from './pages/Trending';
+import  Detail  from './pages/Detail';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Container } from '@mui/material';
 import ScrollToTop from "../src/components/ScrollToTop";
@@ -27,12 +28,11 @@ function App() {
       <Header />
 
       <Container>
-
-
         <Switch>
           <Route path="/" component={Trending} exact />
           <Route path="/movies" component={Movies} />
           <Route path="/series" component={Series} />
+          <Route path="/det/:id" component={Detail} />
         </Switch>
       </Container>
       <ScrollToTop />

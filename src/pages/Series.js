@@ -37,7 +37,6 @@ const Series = () => {
             </div>
             <div container className="trending">
             <selectedGneres />
-            {/* se c'è qualocsa inside content e content map, (console.log(c)) */}
                 {content.map((c) =>
                     <SingleCard
                         key={c.id}

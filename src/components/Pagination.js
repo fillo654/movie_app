@@ -21,7 +21,6 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
         </Stack>
     );
 
-
 }
 
 export default CustomPagination;
